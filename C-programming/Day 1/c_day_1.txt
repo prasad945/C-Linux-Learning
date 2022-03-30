@@ -1,0 +1,354 @@
+1] Addition subtraction multiplcation division
+
+2] Accept four digit number from user and print
+
+   eg. 7896
+    
+   print like
+	
+	7000+800+90+6 = 7896
+   addition of digits :- 30
+
+
+3] Accept 5 subject marks from student and print sum and average of that student
+
+4] accept two numbers and swap without using 3rd variable
+
+5] Reverse the number and check palindrome or not
+
+6] Accept a number and check single digit ,two digits ,three digits or four digits or more
+
+7] Accept 4 numbers and check the maximum from them 
+
+
+8] Accept two numbers and a choice 
+   print addition ,subtraction,multiplication ,division
+  
+   usng if condition
+
+9] accept a number and check positive ,negative or zero 
+
+10] find even number from 1 to 50 
+
+11] find armstrong numbers from 1 to 50 
+
+12] accept a string and print in reverse 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int i=0;
+    for(i=0;i<=10;i++){
+        printf("value of i %d\n",i);
+    }
+    
+    
+    
+    
+
+#include<stdio.h>
+
+int main(){
+
+
+    int i=0;
+    do
+    {
+       printf("\nValue of i %d",i);
+       i++;
+    } while (i<=10);
+    
+
+    
+    
+    // int i=10; //declaration 
+
+    // while(i>=0){  //condition
+    //     printf("\nVAlue of i %d",i);
+    //     i--;  //increment 
+    // }
+
+
+    return 0; 
+}
+
+
+
+
+
+The value of i after the execution of the following segment isi = 2; for( i=0; i>10; i=i+1);
+
+
+
+
+
+What will be the output of the following C code?#include <stdio.h>     int main()     {        int x = 0;         if (x == 1)             if (x >= 0)                 printf("true\n");             else                 printf("false\n");     } 
+
+
+
+
+
+
+
+What will be the output of the following C code?#include <stdio.h>    
+int main()  
+{         int x = 0;        
+ if (x == 1)            
+     if (x == 0)            
+         printf("inside if\n");   
+     else                
+         printf("inside else if\n");      
+ else           
+     printf("inside else\n");    
+} 
+
+
+
+
+
+
+
+
+#include<stdio.h>
+
+int main(){
+
+    int num1,num2,iChoice;
+
+    printf("Enter two numbers\n");
+    scanf("%d",&num1);
+    scanf("%d",&num2);
+
+    printf("\n1] Addition\n2] Subtraction\n3] Multiplication\n4] Division\n");
+    printf("\nEnter your choice\n");
+    scanf("%d",&iChoice);
+
+
+    switch(iChoice){
+
+        case 1:
+                printf("Addition of two numbers %d\n",num1+num2);
+                break;
+        case 2:
+                printf("Subtraction of two numbers %d\n",num1-num2);
+                break;
+        
+        case 3:
+                printf("Multiplication of two numbers %d\n",num1*num2);
+                break;
+        
+        case 4:
+                printf("Division of two numbers %f\n",(float)num1/num2);
+                break;
+        default:
+                printf("Invalied choice\n");
+                
+        
+
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+int marks;
+    printf("Enter your marks");
+    scanf("%d",&marks);
+
+    if(marks>85 && marks<=100) 
+        printf("Congrats! you scored A grade");
+    else if(marks>60 && marks<=85)
+        printf("You have scored B grade");
+    else if(marks>40 && marks<=60)
+        printf("You have scored C grade");
+    else if(marks>30 && marks<=40)
+        printf("You have scored D grade");
+    else
+        printf("Sorry You are failed ");
+        
+        
+        
+        
+        
+        
+        
+
+
+Reading and Writing Characters
+getchar()- waits for a carriage return 
+getch() - reads the character without an echo to the screen
+getche()- echoes the character to the screen 
+putchar()- writes characters one at a time to the terminal 
+
+Reading and Writing Strings
+gets() - Reads a string of characters
+puts() - Writes its string argument to the screen
+
+
+
+
+
+
+
+char ch='A';
+    char str[20]="google.com";
+    float flt=10.23;
+    int num=100;
+    double dl=34.54545;
+
+    printf("\nCharacter is %c",ch);
+    printf("\nString is %s",str);
+    printf("\nfloat is %f",flt);
+    printf("\n integer is %d",num);
+    printf("\nDouble is %lf",dl);
+    
+    
+    
+    
+    
+
+Names of variables, functions, labels and various other user-defined objects
+
+Should be alphanumeric starting with a character like letters [A-Z , a-z], underscore 
+
+Must not contain white space or special character
+
+Are case - sensitive
+
+
+
+
+int iVal1,temp,num1,num2,num3,num4;
+    printf("Enter number\n");
+    scanf("%4d",&iVal1);
+
+    printf("Value is %d",iVal1);
+
+
+    temp=iVal1;
+
+    num1=iVal1%10;
+    iVal1=iVal1/10;
+
+    num2=iVal1%10;
+    iVal1=iVal1/10;
+
+    num3=iVal1%10;
+    iVal1=iVal1/10;
+
+    printf("Values are %d %d %d %d",num1,num2,num3,iVal1);
+
+
+
+
+    
+    
+    
+    
+    
+    
+#include<stdio.h>
+
+int main(){
+
+    int iNum1,iNum2;
+    printf("Enter first numbers\n");
+    scanf("%d",&iNum1);
+
+    printf("Enter second numbers\n");
+    scanf("%d",&iNum2);
+    
+
+    printf("ADdition of two numbers %d",(iNum1+iNum2));
+
+
+    return 0;
+
+}
+
+
+
+
+
+
+
+1] Pascal Case    
+   
+   Employee
+   SaleEmployee
+
+
+2] Camel case
+
+   empId
+   empName
+   showEmployeeDetails
+
+
+
+Hungerian Notation
+int iNum1;
+char cCh;
+float fValue;
+
+
+
+
+
+
+
+
+https://study-site.anreddy.in/cse/installation-guides/setting-up-vs-code-for-c-cpp-development/
+    
+    
+    
+    
+    
+
+
+Efficiency - C programs tend to be compact and run quickly.
+Portability - C programs written on one system can be run on other systems with little or no modification. 
+Power and Flexibility - Many compilers and interpreters for other languages are written in C.
+Programmer Oriented - Fulfills the needs of programmers.
+
+
+
+
+
+
+
+
+‘C’ designed by Dennis Ritchie by taking ‘B’ and ‘BCPL’ languages as the base.
+
+Developed by Brian Kernighan and Dennis Ritchie at the Bell Research Lab in 1972
+
+The Kernighan and Ritchie definitive description of the ‘C’ language referred to as “K&R C”.
+
+
+
+link for codebunk is:
+
+https://codebunk.com/b/9051100437600/
