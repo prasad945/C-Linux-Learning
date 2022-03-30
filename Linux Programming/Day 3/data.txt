@@ -1,0 +1,4 @@
+this  is first line for the record
+this is another line for new record
+vishal is 10 years old
+avinash is going to mumbai
